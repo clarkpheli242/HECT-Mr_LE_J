@@ -1,0 +1,165 @@
+/* FOND AVEC EFFET FUTURISTE */
+body {
+    background: linear-gradient(135deg, #1b263b, #0d1b2a);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* HEADER */
+header {
+    background: #1b263b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #f8b400;
+    color: #000;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* HEADER AVEC DEUX LOGOS */
+.contact-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* SECTION CONTACT */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.contact-info, .contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-info:hover, .contact-form:hover {
+    transform: scale(1.05);
+}
+
+/* ICONES */
+.contact-info p i {
+    color: #f8b400;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* FORMULAIRE AVEC ANIMATION */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #f8b400;
+    outline: none;
+}
+
+.contact-form button {
+    background: linear-gradient(135deg, #f8b400, #ff6b00);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.contact-form button:hover {
+    transform: scale(1.1);
+}
+
+/* MAP */
+.map-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.map-container h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.map-container iframe {
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* FOOTER MODERNE & ATTRACTIF */
+footer {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f8b400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 12px;
+    opacity: 0.8;
+}

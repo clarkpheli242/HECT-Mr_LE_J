@@ -1,0 +1,270 @@
+/* Réinitialisation des marges et des bordures par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mise en forme générale du body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    padding: 20px 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Styles du header */
+header {
+    width: 100%;
+    background-color: #3b5998;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #002147;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+header {
+    background: #1b263b;
+    color: white;    
+}
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #f8b400;
+    color: #000;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 33, 71, 0.95);
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: gold;
+}
+
+.menu-toggle {
+    font-size: 25px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+header .menu ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+header .menu ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header .menu ul li a:hover {
+    color: #ff7b00;
+}
+
+/* Bannières */
+.banner {
+    text-align: center;
+    color: #fff;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+    border-radius: 8px;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Formulaire d'inscription */
+.inscription-form {
+    background-color: #fff;
+    color: #333;
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.inscription-form h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #3b5998;
+    margin-bottom: 30px;
+}
+
+/* Labels et champs de saisie */
+.inscription-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.inscription-form input,
+.inscription-form select,
+.inscription-form button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Effet sur les champs lors du focus */
+.inscription-form input:focus,
+.inscription-form select:focus {
+    border-color: #0072ff;
+    box-shadow: 0 0 10px rgba(0, 114, 255, 0.3);
+}
+
+/* Sélecteur de fichier */
+.inscription-form input[type="file"] {
+    background-color: #f1f1f1;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Bouton d'envoi */
+.btn-submit {
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #005bb5;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+.footer-section h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f8b400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+}
+
+/* Styles pour le texte du footer */
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Réactivité (Mobile) */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .inscription-form {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .inscription-form h2 {
+        font-size: 2rem;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner p {
+        font-size: 1.2rem;
+    }
+}

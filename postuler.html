@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postuler - HECT</title>
+    <link rel="stylesheet" href="postuler.css">
+    <script src="pjt.js" defer></script>
+</head>
+<body>
+
+   <!-- HEADER -->
+    <header>
+        <a href="index.html" class="back-btn">⬅ Retour</a>
+        <h1>ADMI</h1>
+    </header>
+<section class="banner">
+    <h1>Postuler</h1>
+    <p>Remplissez le formulaire ci-dessous pour soumettre votre candidature.</p>
+</section>
+
+<section class="formulaire">
+    <h2>Formulaire de Candidature</h2>
+    <form action="soumettre_candidature.php" method="POST" enctype="multipart/form-data">
+        <input type="text" id="Nom Complet" placeholder="Nom Complet" required>
+        <input type="text" id="Adresse E-mail" placeholder="Adresse E-mail" required>
+        <input type="tel" id="Numéro de Téléphone" placeholder="Numéro de Téléphone" required>
+        <input type="text" id="Diplôme Obtenu " placeholder="Diplôme Obtenu " required>
+        <select id="filiere" name="filiere" required>
+            <option value="">Sélectionnez une filière</option>
+            <option value="reseautelecom">Réseaux et Télécommunications</option>
+            <option value="banque">Banque, Assurance et Finance</option>
+            <option value="gestioncomptable">Gestion Comptable et Financière</option>
+            <option value="rh">Gestion des Ressources Humaines</option>
+            <option value="marketing">Gestion Marketing et Commerciale</option>
+            <option value="logistique">Transport et Logistique</option>
+        </select>
+
+        <label for="piece_identite">Télécharger la Carte d'Identité :</label>
+        <input type="file" id="piece_identite" name="piece_identite" required>
+
+        <label for="photo_identite">Télécharger une Photo d'Identité :</label>
+        <input type="file" id="photo_identite" name="photo_identite" required>
+
+        <button type="submit" class="btn-submit">Envoyer ma Candidature</button>
+    </form>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>🌟 Rejoignez l'excellence avec HECT !</h3>
+            <p>Transformez votre avenir avec une formation de qualité. Faites partie des leaders de demain ! 🚀</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; HECT - Tous droits réservés | Designed by Mr_le J</p>
+    </div>
+</footer>
+
+</body>
+</html>

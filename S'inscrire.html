@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - HECT</title>
+    <link rel="stylesheet" href="S'inscrire.css">
+    <script src="pjt.js" defer></script>
+</head>
+<body>
+
+   <!-- HEADER -->
+    <header>
+        <a href="index.html" class="back-btn">⬅ Retour</a>
+        <h1>S'insc</h1>
+    </header>
+
+    <!-- BANNIÈRE AVEC IMAGE -->
+    <section class="banner">
+        <h1>Inscription</h1>
+        <p>Complétez le formulaire pour vous inscrire</p>
+    </section>
+
+    <!-- FORMULAIRE D'INSCRIPTION -->
+    <section class="inscription-form">
+        <h2>Formulaire d'inscription</h2>
+        <form action="#" method="POST">
+            <input type="text" id="Nom Complet" placeholder="Nom Complet" required>
+            <input type="text" id="Adresse E-mail" placeholder="Adresse E-mail" required>
+            <input type="tel" id="Numéro de Téléphone" placeholder="Numéro de Téléphone" required>
+
+            <select id="filiere" name="filiere" required>
+                <option value="">Sélectionnez une filière</option>
+                <option value="reseautelecom">Réseaux et Télécommunications</option>
+                <option value="banque">Banque, Assurance et Finance</option>
+                <option value="gestioncomptable">Gestion Comptable et Financière</option>
+                <option value="rh">Gestion des Ressources Humaines</option>
+                <option value="marketing">Gestion Marketing et Commerciale</option>
+                <option value="logistique">Transport et Logistique</option>
+            </select>
+            <select id="serie" name="serie" required>
+                <option value="">Choisir une Série du Bac</option>
+                <option value="sciences">Sciences</option>
+                <option value="lettres">Lettres</option>
+                <option value="economique">Economique</option>
+                <option value="technique">Technique</option>
+            </select>
+
+            <label for="cv">Télécharger votre CV</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+            <button type="submit" class="btn-submit">S'inscrire</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>🌟 Rejoignez l'excellence avec HECT !</h3>
+                <p>Transformez votre avenir avec une formation de qualité. Faites partie des leaders de demain ! 🚀</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; HECT - Tous droits réservés | Designed by Mr_le J</p>
+        </div>
+    </footer>
+
+</body>
+</html>

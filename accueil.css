@@ -1,0 +1,177 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER & MENU */
+header {
+    background-color: #2c3e50;
+    padding: 15px 0;
+}
+
+.main-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu ul li {
+    margin: 0 20px;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.main-menu ul li a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+/* BANNIÈRE AVEC IMAGE */
+.banner {
+   
+    text-align: center;
+    margin-top: 0px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.video-overlay h2 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.video-overlay p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* FILIÈRES */
+.filieres {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+
+.filieres h2 {
+    font-size: 28px;
+    color: #002147;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #002147;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* BOUTON S'INSCRIRE */
+.inscription-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.btn-inscrire {
+    display: inline-block;
+    background: gold;
+    color: #002147;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-inscrire:hover {
+    background: #ffcc00;
+}
+
+/* FOOTER MODERNE & ATTRACTIF */
+footer {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f8b400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 12px;
+    opacity: 0.8;
+}

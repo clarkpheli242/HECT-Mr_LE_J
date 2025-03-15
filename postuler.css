@@ -1,0 +1,194 @@
+/* Réinitialisation des marges et des bordures par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mise en forme générale du body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    background: #1b263b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #f8b400;
+    color: #000;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* Bannières */
+.banner {
+    text-align: center;
+    color: #fff;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+    border-radius: 8px;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Formulaire de candidature */
+.formulaire {
+    margin-top: 390px;
+    background-color: #fff;
+    color: #333;
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.formulaire:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.formulaire h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #3b5998;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Labels et champs de saisie */
+.formulaire label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.formulaire input,
+.formulaire select,
+.formulaire button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Effet sur les champs lors du focus */
+.formulaire input:focus,
+.formulaire select:focus {
+    border-color: #0072ff;
+    box-shadow: 0 0 10px rgba(0, 114, 255, 0.3);
+}
+
+/* Sélecteur de fichier */
+.formulaire input[type="file"] {
+    background-color: #f1f1f1;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Bouton d'envoi */
+.btn-submit {
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #005bb5;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+.footer-section h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f8b400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+}
+
+/* Styles pour le texte du footer */
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+
+/* Réactivité (Mobile) */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .formulaire {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .formulaire h2 {
+        font-size: 2rem;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner p {
+        font-size: 1.2rem;
+    }
+
+    header .menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

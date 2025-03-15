@@ -1,0 +1,108 @@
+/* HEADER */
+header {
+    background: #1b263b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #f8b400;
+    color: #000;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.banner {
+  font-family: 'Poppins', sans-serif;
+    padding: 40px 20px;
+    color: #fff;
+    background: linear-gradient(135deg, #2e8139, #c4c25e, #8a3038);
+    margin-top: 0px;
+    height: auto;
+    text-align: center
+}
+.admissions {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.admissions h2 {
+    color: #002147;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.admissions ul, .admissions ol {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 0;
+}
+
+.admissions li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.inscription-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn-inscrire {
+    background: gold;
+    color: #002147;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-inscrire:hover {
+    background: #ffcc00;
+}
+/* FOOTER MODERNE & ATTRACTIF */
+footer {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f8b400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 12px;
+    opacity: 0.8;
+}

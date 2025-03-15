@@ -1,0 +1,109 @@
+/* HEADER */
+header {
+    background: #1b263b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+}
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #f8b400;
+    color: #000;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* FILIÈRES */
+.filieres-container {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.filiere {
+    margin-bottom: 50px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filiere h2 {
+    background: #f8b400;
+    color: #000;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.filiere p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* GALERIE D'IMAGES */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER MODERNE & ATTRACTIF */
+footer {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f8b400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 12px;
+    opacity: 0.8;
+}
